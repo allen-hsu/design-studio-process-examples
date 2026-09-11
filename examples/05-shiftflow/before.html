@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ShiftFlow｜AI 驅動的餐廳排班平台</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,-apple-system,"Noto Sans TC",sans-serif;color:#1f2937;background:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 64px}
+.logo{font-weight:700;font-size:22px}
+.nav-links{display:flex;gap:32px;font-size:15px;color:#4b5563}
+.btn{display:inline-block;padding:12px 24px;border-radius:12px;font-weight:600;background:linear-gradient(135deg,#6366f1,#a855f7);color:#fff;box-shadow:0 10px 25px rgba(99,102,241,.3)}
+.btn.ghost{background:#fff;color:#4f46e5;box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding:80px 64px;background:linear-gradient(135deg,#eef2ff 0%,#faf5ff 50%,#fdf2f8 100%)}
+.eyebrow{display:inline-block;font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:#6366f1;font-weight:600;margin-bottom:16px}
+h1{font-size:56px;line-height:1.15;font-weight:800;margin-bottom:20px}
+h1 .grad{background:linear-gradient(90deg,#6366f1,#ec4899);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:19px;color:#4b5563;margin-bottom:32px}
+.hero .actions{display:flex;gap:16px}
+.mock{background:#fff;border-radius:20px;box-shadow:0 25px 50px rgba(0,0,0,.12);padding:24px;height:360px;position:relative;overflow:hidden}
+.mock .bar{height:12px;border-radius:6px;background:#e0e7ff;margin:14px 0}
+.mock .bar.a{width:70%;background:linear-gradient(90deg,#818cf8,#c084fc)}
+.mock .bar.b{width:45%}
+.mock .bar.c{width:85%;background:linear-gradient(90deg,#f472b6,#a78bfa)}
+.mock .chart{display:flex;align-items:flex-end;gap:10px;height:160px;margin-top:30px}
+.mock .chart i{flex:1;border-radius:6px 6px 0 0;background:linear-gradient(180deg,#a5b4fc,#6366f1)}
+.logos{display:flex;justify-content:center;gap:56px;padding:40px;color:#9ca3af;font-weight:700;font-size:18px}
+section{padding:96px 64px;text-align:center}
+section h2{font-size:40px;font-weight:800;margin-bottom:12px}
+section .sub{color:#6b7280;max-width:620px;margin:0 auto 56px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:left}
+.card{background:#fff;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,.08);padding:32px}
+.card .icon{font-size:32px;margin-bottom:16px}
+.card h3{font-size:20px;margin-bottom:8px}
+.card p{color:#6b7280}
+.card .more{display:inline-block;margin-top:16px;color:#6366f1;font-weight:600}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.step{background:#fff;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,.08);padding:32px;text-align:left}
+.step .num{font-size:14px;font-weight:700;color:#a855f7;letter-spacing:.1em}
+.stats{display:flex;justify-content:center;gap:96px;margin-top:24px}
+.stats b{display:block;font-size:48px;background:linear-gradient(90deg,#6366f1,#a855f7);-webkit-background-clip:text;color:transparent}
+.stats span{color:#6b7280}
+.testi{background:linear-gradient(135deg,#eef2ff,#fdf2f8)}
+.quote{max-width:720px;margin:0 auto;background:#fff;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,.08);padding:40px;font-size:20px}
+.quote .who{margin-top:16px;font-size:15px;color:#6b7280}
+.cta{background:linear-gradient(135deg,#4f46e5,#9333ea);color:#fff;border-radius:24px;margin:64px;padding:72px}
+.cta p{color:#e0e7ff;margin:12px 0 32px}
+.cta .btn{background:#fff;color:#4f46e5}
+footer{padding:40px 64px;color:#9ca3af;font-size:14px;display:flex;justify-content:space-between}
+</style>
+</head>
+<body>
+<nav><div class="logo">⚡ ShiftFlow</div><div class="nav-links"><a href="#">功能</a><a href="#">價格</a><a href="#">客戶案例</a><a href="#">部落格</a></div><a class="btn" href="#">免費試用 →</a></nav>
+<header class="hero">
+  <div>
+    <span class="eyebrow">AI-Powered Scheduling</span>
+    <h1>用 AI <span class="grad">輕鬆打造</span>完美排班</h1>
+    <p>ShiftFlow 是一站式餐廳排班平台，無縫整合打卡、請假與薪資，賦能您的團隊專注於最重要的事。</p>
+    <div class="actions"><a class="btn" href="#">立即開始 →</a><a class="btn ghost" href="#">預約 Demo →</a></div>
+  </div>
+  <div class="mock"><div class="bar a"></div><div class="bar b"></div><div class="bar c"></div><div class="chart"><i style="height:40%"></i><i style="height:65%"></i><i style="height:50%"></i><i style="height:85%"></i><i style="height:70%"></i><i style="height:95%"></i></div></div>
+</header>
+<div class="logos"><span>RestoGroup</span><span>FoodCo</span><span>TasteHub</span><span>DineWell</span><span>ChefLine</span></div>
+<section>
+  <span class="eyebrow">Features</span>
+  <h2>強大功能，一應俱全</h2>
+  <p class="sub">從排班到薪資，ShiftFlow 提供全方位解決方案，讓管理變得前所未有的簡單。</p>
+  <div class="grid">
+    <div class="card"><div class="icon">🤖</div><h3>AI 智慧排班</h3><p>根據營業額預測自動產生最佳班表，節省 80% 排班時間。</p><a class="more" href="#">了解更多 →</a></div>
+    <div class="card"><div class="icon">⏰</div><h3>即時打卡</h3><p>員工手機一鍵打卡，GPS 定位防止代打卡，資料即時同步。</p><a class="more" href="#">了解更多 →</a></div>
+    <div class="card"><div class="icon">💰</div><h3>自動算薪</h3><p>加班費、夜班津貼自動計算，符合勞基法規範，零錯誤。</p><a class="more" href="#">了解更多 →</a></div>
+  </div>
+</section>
+<section>
+  <span class="eyebrow">How it works</span>
+  <h2>三步驟，輕鬆上手</h2>
+  <p class="sub">快速 · 簡單 · 安全</p>
+  <div class="steps">
+    <div class="step"><div class="num">01</div><h3>匯入員工</h3><p>上傳 Excel 或串接 POS 系統。</p></div>
+    <div class="step"><div class="num">02</div><h3>設定規則</h3><p>設定人力需求與排班偏好。</p></div>
+    <div class="step"><div class="num">03</div><h3>一鍵發布</h3><p>班表自動推播到每位員工手機。</p></div>
+  </div>
+  <div class="stats"><div><b>500+</b><span>合作餐廳</span></div><div><b>80%</b><span>節省時間</span></div><div><b>99.9%</b><span>系統穩定度</span></div></div>
+</section>
+<section class="testi">
+  <span class="eyebrow">Testimonials</span>
+  <h2>客戶怎麼說</h2>
+  <p class="sub">超過 500 家餐廳信賴 ShiftFlow</p>
+  <div class="quote">「導入 ShiftFlow 之後，我們的排班時間從每週 6 小時縮短到 30 分鐘，員工滿意度也大幅提升！」<div class="who">王小明 · 營運長 · 美味餐飲集團</div></div>
+</section>
+<div class="cta"><h2>準備好革命性地提升您的排班效率了嗎？</h2><p>14 天免費試用，無需信用卡。</p><a class="btn" href="#">免費開始使用 →</a></div>
+<footer><span>© 2026 ShiftFlow Inc.</span><span>隱私權政策 · 服務條款 · 聯絡我們</span></footer>
+</body>
+</html>

@@ -1,0 +1,8 @@
+handoff/
+.env*
+.git/
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+*.mp4
